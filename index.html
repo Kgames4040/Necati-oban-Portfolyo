@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Necati ÇOBAN | Yazılım, Web Tasarım, Video Editörlüğü Hizmetleri</title>
+  <meta name="description" content="A creative developer and designer crafting immersive digital experiences with code and design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png?v=2">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── PRELOADER ── -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__bar-track">
+      <div class="preloader__bar-fill" id="preloaderBarFill"></div>
+    </div>
+    <div class="preloader__text">
+      <span class="preloader__name">Necati ÇOBAN</span>
+      <span class="preloader__count" id="preloaderCount">0</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── CURSOR ── -->
+<div class="cursor" id="cursor">
+  <div class="cursor__dot"></div>
+  <div class="cursor__ring"></div>
+</div>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="mainNav">
+  <a href="#hero" class="nav__logo">
+    <img src="logo.png" alt="Logo" class="nav__logo-img">
+  </a>
+  <ul class="nav__links">
+    <li><a href="#about"    class="nav__link">Hakkında</a></li>
+    <li><a href="#showreel" class="nav__link">Bilgi Alın</a></li>
+    <li><a href="#skills"   class="nav__link">Yetenekler</a></li>
+    <li><a href="#projects" class="nav__link">Projeler</a></li>
+    <li><a href="#contact"  class="nav__link nav__link--cta">İletişim</a></li>
+  </ul>
+  <button class="nav__menu-btn" id="menuBtn" aria-label="Menü">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul class="mobile-menu__links">
+    <li><a href="#about"    class="mobile-menu__link">Hakkında</a></li>
+    <li><a href="#showreel" class="mobile-menu__link">Bilgi Alın</a></li>
+    <li><a href="#skills"   class="mobile-menu__link">Yetenekler</a></li>
+    <li><a href="#projects" class="mobile-menu__link">Projeler</a></li>
+    <li><a href="#contact"  class="mobile-menu__link">İletişim</a></li>
+  </ul>
+  <div class="mobile-menu__socials">
+    <a href="https://github.com/Kgames4040" target="_blank">GitHub</a>
+    <a href="https://x.com/xrosewf4" target="_blank">Twitter/X</a>
+  </div>
+</div>
+
+<main>
+
+  <!-- ════════════════════════════════════
+       HERO  — dark panel
+  ════════════════════════════════════ -->
+  <section class="hero panel panel--dark" id="hero">
+
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Sizinle Çalışmak İçin Uygun
+      </div>
+
+      <h1 class="hero__title">
+        <div class="hero__title-line"><span>Yaratıcı</span></div>
+        <div class="hero__title-line hero__title-line--indent hero__title-line--accent"><span>Geliştirici</span></div>
+        <div class="hero__title-line"><span>&amp;</span></div>
+        <div class="hero__title-line"><span>Tasarımcı</span></div>
+      </h1>
+
+      <div class="hero__bottom">
+        <div class="hero__avatar-wrapper">
+          <div class="hero__avatar">
+            <img src="photo.png" alt="Necati ÇOBAN" class="hero__avatar-img">
+          </div>
+          <span class="hero__avatar-label">Necati ÇOBAN</span>
+        </div>
+        <p class="hero__subtitle">
+          Son teknolojiyi özenli tasarımla harmanlayan,<br>
+          sürükleyici dijital deneyimler yaratıyorum.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">
+            <span>Çalışmalarım</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">İletişim</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="hero__scroll-line"></div>
+      <span>Kaydır</span>
+    </div>
+
+    <!-- Marquee ticker -->
+    <div class="marquee-section">
+      <div class="marquee-items" id="marqueeItems">
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18L22 12L16 6"/><path d="M8 6L2 12L8 18"/><path d="M14 4L10 20"/></svg><span>React</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg><span>Vue</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg><span>Next.js</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg><span>TypeScript</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg><span>Figma</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg><span>Node.js</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span>Python</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span>PostgreSQL</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg><span>GSAP</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg><span>WebGL</span></div>
+        <!-- duplicate for seamless loop -->
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18L22 12L16 6"/><path d="M8 6L2 12L8 18"/><path d="M14 4L10 20"/></svg><span>React</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg><span>Vue</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg><span>Next.js</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg><span>TypeScript</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg><span>Figma</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg><span>Node.js</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span>Python</span></div>
+        <div class="marquee-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg><span>PostgreSQL</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       ABOUT  — light panel (slides over hero)
+  ════════════════════════════════════ -->
+  <section class="panel panel--light" id="about">
+    <div class="container">
+      <div class="about__layout">
+
+        <div class="about__image-col">
+          <div class="about__image-wrap">
+            <img src="photo.png" alt="Necati ÇOBAN" class="about__photo">
+            <div class="about__image-overlay"></div>
+            <div class="about__exp-badge">
+              <span class="about__exp-number">5+</span>
+              <span class="about__exp-text">Yıllık<br>Deneyim</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__text-col">
+          <div class="about__header">
+            <span class="section__label">Hakkımda</span>
+            <h2>Beni<br>Tanıyın</h2>
+          </div>
+          <p class="about__paragraph">
+            Merhaba! Osmaniye'de yaşayan 18 yaşında tutkulu bir full-stack developer ve tasarımcıyım.
+            Hızlı, erişilebilir ve görsel açıdan çarpıcı dijital deneyimler inşa etme konusunda uzmanım.
+          </p>
+          <p class="about__paragraph">
+            Frontend engineering, UI/UX design ve creative development alanlarını kapsayan geçmişimle
+            her projeye benzersiz bir perspektif katıyorum. Harika yazılımların, güzel bir tasarım ile
+            sağlam bir mühendisliğin kesiştiği noktada doğduğuna inanıyorum.
+          </p>
+          <p class="about__paragraph">
+            Ekrandan uzaklaştığım anlarda beni muhtemelen kişisel sunucumda yeni araçlar denerken veya
+            açık kaynak dünyasındaki son gelişmeleri kahve eşliğinde okurken bulabilirsiniz.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-number counter-anim" data-target="50">0</span><span class="about__stat-plus">+</span>
+              <span class="about__stat-label">Tamamlanan Proje</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number counter-anim" data-target="30">0</span><span class="about__stat-plus">+</span>
+              <span class="about__stat-label">İşlevli Yazılım</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-number counter-anim" data-target="1">0</span><span class="about__stat-plus">+</span>
+              <span class="about__stat-label">Kazanılan Ödül</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       PROJECTS  — dark panel
+  ════════════════════════════════════ -->
+  <section class="panel panel--dark" id="projects">
+    <div class="container">
+      <div class="projects__header">
+        <span class="section__label">Seçili Çalışmalar</span>
+        <h2>Öne Çıkan<br>Projeler</h2>
+      </div>
+    </div>
+
+    <div class="projects__list">
+
+      <a href="https://www.itemsatis.com/yazilim-bot-satislari/sorunsuz-mail-oto-kod-sistemi-tum-programlar-4061254.html"
+         target="_blank" rel="noopener noreferrer" class="project-row">
+        <div class="container">
+          <div class="project-row__inner">
+            <div class="project-row__text">
+              <span class="project-row__num">01</span>
+              <div>
+                <h3 class="project-row__title">Mail Oto Kod Sistemi</h3>
+                <p class="project-row__desc">Paylaşımlı hesap satışı yapan mağazalar için geliştirilmiş, spam riskini minimize eden web tabanlı erişim yönetim platformu. OTP ile güvenli erişim.</p>
+              </div>
+            </div>
+            <div class="project-row__tags"><span>React</span><span>Python</span><span>OTP</span><span>API</span></div>
+            <div class="project-row__arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </div>
+          </div>
+          <div class="project-row__image-reveal"><img src="project1.png" alt="Mail Oto Kod Sistemi"></div>
+        </div>
+      </a>
+
+      <a href="https://instakod.onrender.com/"
+         target="_blank" rel="noopener noreferrer" class="project-row">
+        <div class="container">
+          <div class="project-row__inner">
+            <div class="project-row__text">
+              <span class="project-row__num">02</span>
+              <div>
+                <h3 class="project-row__title">Otomatik Sitemap Tarayıcı</h3>
+                <p class="project-row__desc">XML sitemap yapısını analiz ederek tüm URL'leri otomatik tarayan ve hedeflenen verileri anlık çeken otomasyon çözümü.</p>
+              </div>
+            </div>
+            <div class="project-row__tags"><span>Next.js</span><span>Node.js</span><span>Scraping</span><span>XML</span></div>
+            <div class="project-row__arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </div>
+          </div>
+          <div class="project-row__image-reveal"><img src="project2.png" alt="Sitemap Tarayıcı"></div>
+        </div>
+      </a>
+
+      <a href="https://ornekqrmenu1.onrender.com/"
+         target="_blank" rel="noopener noreferrer" class="project-row">
+        <div class="container">
+          <div class="project-row__inner">
+            <div class="project-row__text">
+              <span class="project-row__num">03</span>
+              <div>
+                <h3 class="project-row__title">QR Menü 1 — Dark</h3>
+                <p class="project-row__desc">Lüks restoranlar için tasarlanmış altın sarısı ve siyah renk paletine sahip premium karanlık temalı dijital menü sistemi.</p>
+              </div>
+            </div>
+            <div class="project-row__tags"><span>HTML/CSS</span><span>JavaScript</span><span>QR Code</span><span>Dark UI</span></div>
+            <div class="project-row__arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </div>
+          </div>
+          <div class="project-row__image-reveal"><img src="project3.png" alt="QR Menü 1"></div>
+        </div>
+      </a>
+
+      <a href="https://ornekqrmenu2.onrender.com/"
+         target="_blank" rel="noopener noreferrer" class="project-row">
+        <div class="container">
+          <div class="project-row__inner">
+            <div class="project-row__text">
+              <span class="project-row__num">04</span>
+              <div>
+                <h3 class="project-row__title">QR Menü 2 — Light</h3>
+                <p class="project-row__desc">Minimalist aydınlık temalı dijital menü platformu. Statik PDF menüleri modern dijital kataloglara dönüştürür.</p>
+              </div>
+            </div>
+            <div class="project-row__tags"><span>HTML/CSS</span><span>JavaScript</span><span>QR Code</span><span>Light UI</span></div>
+            <div class="project-row__arrow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </div>
+          </div>
+          <div class="project-row__image-reveal"><img src="project4.png" alt="QR Menü 2"></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SHOWREEL  — navy panel
+  ════════════════════════════════════ -->
+  <section class="panel panel--navy" id="showreel">
+    <div class="container">
+      <div class="showreel__header">
+        <span class="section__label">Tanıtım</span>
+        <h2>Bilgi<br>Alın</h2>
+        <p class="showreel__subtitle">Firmamızın sunduğu hizmetleri ve çalışma sürecimizi yakından tanıyın.</p>
+      </div>
+      <div class="showreel__video-container" id="videoContainer">
+        <div class="custom-video-player" id="videoPlayer">
+          <video class="showreel__video" id="showreelVideo" preload="metadata">
+            <source src="RosewfIntro.mp4" type="video/mp4">
+          </video>
+          <button class="video-overlay-play" id="overlayPlayBtn" aria-label="Videoyu Oynat">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Oynat</span>
+          </button>
+          <div class="video-controls" id="videoControls">
+            <button class="control-btn" id="playPauseBtn">
+              <svg class="icon-play"  width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <svg class="icon-pause" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            </button>
+            <div class="video-progress-container" id="progressContainer">
+              <div class="video-progress-bar" id="progressBar"></div>
+            </div>
+            <span class="video-time" id="videoTime">0:00 / 0:00</span>
+            <button class="control-btn" id="fullscreenBtn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SKILLS  — dark panel
+  ════════════════════════════════════ -->
+  <section class="panel panel--dark" id="skills">
+    <div class="container">
+      <div class="skills__header">
+        <span class="section__label">Yetenekler</span>
+        <h2>Uzmanlık<br>Alanları</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-category__top">
+            <h3 class="skill-category__title">Frontend</h3>
+            <span class="skill-category__count">05</span>
+          </div>
+          <div class="skill-category__list">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" class="skill-logo">React</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="" class="skill-logo">Vue</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" class="skill-logo">TypeScript</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" class="skill-logo skill-logo--invert">Next.js</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" class="skill-logo">CSS/SCSS</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category__top">
+            <h3 class="skill-category__title">Backend</h3>
+            <span class="skill-category__count">05</span>
+          </div>
+          <div class="skill-category__list">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" class="skill-logo">Node.js</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" class="skill-logo">Python</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" class="skill-logo">PostgreSQL</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>REST API</div>
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="" class="skill-logo">GraphQL</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category__top">
+            <h3 class="skill-category__title">Design</h3>
+            <span class="skill-category__count">04</span>
+          </div>
+          <div class="skill-category__list">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" class="skill-logo">Figma</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>Framer</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>UI/UX</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Prototyping</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-category__top">
+            <h3 class="skill-category__title">Creative</h3>
+            <span class="skill-category__count">04</span>
+          </div>
+          <div class="skill-category__list">
+            <div class="skill-pill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="" class="skill-logo skill-logo--invert">Three.js</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>GSAP</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0022 16z"/></svg>WebGL</div>
+            <div class="skill-pill"><svg class="skill-logo" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg>Canvas</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CONTACT  — lime panel
+  ════════════════════════════════════ -->
+  <section class="panel panel--lime" id="contact">
+    <div class="container">
+      <div class="contact__layout">
+
+        <div class="contact__left">
+          <span class="section__label">İletişim</span>
+          <h2 class="contact__big-title">Birlikte<br>Çalışalım</h2>
+          <p class="contact__sub">
+            Yeni projeler ve iş birlikleri hakkında konuşmaktan her zaman mutluluk duyarım.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:cobannecati40@gmail.com" class="contact__link-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+              <span class="contact__link-value">cobannecati40@gmail.com</span>
+            </a>
+            <a href="https://github.com/Kgames4040" target="_blank" class="contact__link-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              <span class="contact__link-value">github.com/Kgames4040</span>
+            </a>
+            <a href="https://www.itemsatis.com/profil/RosewfShop.html" target="_blank" class="contact__link-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+              <span class="contact__link-value">itemsatis.com/RosewfShop</span>
+            </a>
+            <a href="https://instagram.com/rosewfsad" target="_blank" class="contact__link-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              <span class="contact__link-value">instagram.com/rosewfsad</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__right">
+          <form class="contact__form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder=" " required>
+              <label for="name" class="form-label">Adınız</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder=" " required>
+              <label for="email" class="form-label">E-posta Adresiniz</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-input form-textarea" placeholder=" " required rows="5"></textarea>
+              <label for="message" class="form-label">Mesajınız</label>
+            </div>
+            <button type="submit" class="btn btn--dark btn--full">
+              <span>Mesaj Gönder</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <img src="logo.png" alt="Logo" class="footer__logo">
+      <p class="footer__copy">&copy; 2026 Necati ÇOBAN — Tutkuyla tasarlandı, ustalıkla üretildi.</p>
+    </div>
+    <div class="footer__socials">
+      <a href="https://github.com/Kgames4040" target="_blank" class="footer__social" aria-label="GitHub">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      </a>
+      <a href="https://x.com/xrosewf4" target="_blank" class="footer__social" aria-label="Twitter/X">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l11.733 16H20L8.267 4H4z"/><path d="M4 20l6.768-6.768M20 4l-6.768 6.768"/></svg>
+      </a>
+      <a href="mailto:cobannecati40@gmail.com" class="footer__social" aria-label="Mail">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+      </a>
+      <a href="https://www.itemsatis.com/profil/RosewfShop.html" target="_blank" class="footer__social" aria-label="İtemsatış">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      </a>
+      <a href="https://instagram.com/rosewfsad" target="_blank" class="footer__social" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- GSAP + ScrollTrigger + Lenis -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
