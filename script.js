@@ -458,7 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Build mailto URL
       const subject = encodeURIComponent(`Portfolyo İletişim — ${name}`);
       const body = encodeURIComponent(`Ad: ${name}\nE-posta: ${email}\n\nMesaj:\n${message}`);
-      const mailtoURL = `mailto:cobannecati40@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoURL = `mailto:info@necaticoban.com.tr?subject=${subject}&body=${body}`;
       
       // Open mail client
       window.location.href = mailtoURL;
